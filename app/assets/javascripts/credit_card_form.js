@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   
   var show_error, stripeResponseHandler, submitHandler;
   
@@ -10,7 +10,7 @@ $(document).ready(function(){
     if(Stripe){
       Stripe.card.createToken($form, stripeResponseHandler);
     } else {
-      show_error("failed to load cred card processing functionality. Please reload this page in your browser.")
+      show_error("failed to load credit card processing functionality. Please reload this page in your browser.");
     }
     return false;
   };
